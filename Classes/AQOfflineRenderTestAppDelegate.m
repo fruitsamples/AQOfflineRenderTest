@@ -55,7 +55,7 @@
 
     // Override point for customization after application launch
     [window addSubview:[navigationController view]];
-    [window makeKeyAndVisible]; // is this needed?
+    [window makeKeyAndVisible];
 }
 
 - (void)dealloc {

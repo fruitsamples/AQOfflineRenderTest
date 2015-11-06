@@ -49,6 +49,8 @@
 
 #define kTransitionDuration	0.75
 
+extern void DoAQOfflineRender(CFURLRef sourceURL, CFURLRef destinationURL);
+
 @implementation MyViewController
 
 @synthesize instructionsView, webView, contentView, startButton, activityIndicator, flipButton, doneButton;
@@ -82,8 +84,8 @@
     [self.webView loadHTMLString:infoText baseURL:nil];
     
     // set up start button
-    UIImage *greenImage = [[[UIImage imageNamed:@"green_button.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
-	UIImage *redImage = [[[UIImage imageNamed:@"red_button.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
+    UIImage *greenImage = [[UIImage imageNamed:@"green_button.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0];
+	UIImage *redImage = [[UIImage imageNamed:@"red_button.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0];
 	
 	[startButton setBackgroundImage:greenImage forState:UIControlStateNormal];
 	[startButton setBackgroundImage:redImage forState:UIControlStateDisabled];
@@ -143,7 +145,7 @@
     }
 }
 
-- (IBAction)doSomethingAction:(id)sender;
+- (IBAction)doSomethingAction:(id)sender
 {
     [self.startButton setTitle:@"Rendering Audio..." forState:UIControlStateDisabled];
 	[startButton setEnabled:NO];

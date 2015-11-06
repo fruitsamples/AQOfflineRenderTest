@@ -78,5 +78,3 @@
 - (IBAction)doSomethingAction:(id)sender;
 
 @end
-
-void DoAQOfflineRender(CFURLRef sourceURL, CFURLRef destinationURL);

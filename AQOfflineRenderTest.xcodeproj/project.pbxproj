@@ -16,7 +16,6 @@
 		2B5324C80F5383D30033DE8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5324C70F5383D30033DE8C /* AVFoundation.framework */; };
 		2B5324CA0F5383DD0033DE8C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5324C90F5383DD0033DE8C /* AudioToolbox.framework */; };
 		2BE30AC10F59C4ED00D63998 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BE30ABF0F59C4ED00D63998 /* CAStreamBasicDescription.cpp */; };
-		2BE30AE80F59CDCF00D63998 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BE30AE60F59CDCF00D63998 /* CAXException.cpp */; };
 		2BE30B200F59F67E00D63998 /* green_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BE30B1C0F59F67E00D63998 /* green_button.png */; };
 		2BE30B210F59F67E00D63998 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BE30B1D0F59F67E00D63998 /* red_button.png */; };
 		2BE30B220F59F67E00D63998 /* soundalac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2BE30B1E0F59F67E00D63998 /* soundalac.caf */; };
@@ -24,6 +23,7 @@
 		2BE30B650F5A054000D63998 /* aqofflinerender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BE30B640F5A054000D63998 /* aqofflinerender.cpp */; };
 		2BFBE19D0F5C9B30003ECC4F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBE19B0F5C9B30003ECC4F /* MyViewController.m */; };
 		2BFBE1AC0F5C9C54003ECC4F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BFBE1AB0F5C9C54003ECC4F /* Icon.png */; };
+		2BFC8D761047097E00C9A1B3 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC8D741047097E00C9A1B3 /* CAXException.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +42,6 @@
 		2BE30ABE0F59C4ED00D63998 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
 		2BE30ABF0F59C4ED00D63998 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
 		2BE30AC00F59C4ED00D63998 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
-		2BE30AE60F59CDCF00D63998 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAXException.cpp; path = Examples/CoreAudio/PublicUtility/CAXException.cpp; sourceTree = DEVELOPER_DIR; };
-		2BE30AE70F59CDCF00D63998 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAXException.h; path = Examples/CoreAudio/PublicUtility/CAXException.h; sourceTree = DEVELOPER_DIR; };
 		2BE30B1C0F59F67E00D63998 /* green_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green_button.png; path = Resources/green_button.png; sourceTree = "<group>"; };
 		2BE30B1D0F59F67E00D63998 /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red_button.png; path = Resources/red_button.png; sourceTree = "<group>"; };
 		2BE30B1E0F59F67E00D63998 /* soundalac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = soundalac.caf; path = Resources/soundalac.caf; sourceTree = "<group>"; };
@@ -53,6 +51,8 @@
 		2BFBE19C0F5C9B30003ECC4F /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		2BFBE1A00F5C9C30003ECC4F /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		2BFBE1AB0F5C9C54003ECC4F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2BFC8D741047097E00C9A1B3 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		2BFC8D751047097E00C9A1B3 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,6 @@
 				2BE30B640F5A054000D63998 /* aqofflinerender.cpp */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				2BE30ABC0F59C4ED00D63998 /* iPublicUtility */,
-				2BE30ADB0F59CDBE00D63998 /* PublicUtility */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -147,19 +146,12 @@
 			children = (
 				2BE30ABD0F59C4ED00D63998 /* CADebugMacros.h */,
 				2BE30ABE0F59C4ED00D63998 /* CAMath.h */,
+				2BFC8D751047097E00C9A1B3 /* CAXException.h */,
 				2BE30AC00F59C4ED00D63998 /* CAStreamBasicDescription.h */,
 				2BE30ABF0F59C4ED00D63998 /* CAStreamBasicDescription.cpp */,
+				2BFC8D741047097E00C9A1B3 /* CAXException.cpp */,
 			);
 			path = iPublicUtility;
-			sourceTree = "<group>";
-		};
-		2BE30ADB0F59CDBE00D63998 /* PublicUtility */ = {
-			isa = PBXGroup;
-			children = (
-				2BE30AE70F59CDCF00D63998 /* CAXException.h */,
-				2BE30AE60F59CDCF00D63998 /* CAXException.cpp */,
-			);
-			name = PublicUtility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,11 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				2BE30AE80F59CDCF00D63998 /* CAXException.cpp in Sources */,
 				2BE30AC10F59C4ED00D63998 /* CAStreamBasicDescription.cpp in Sources */,
 				2BE30B650F5A054000D63998 /* aqofflinerender.cpp in Sources */,
 				2BFBE19D0F5C9B30003ECC4F /* MyViewController.m in Sources */,
 				2B2115140FC4D8B700EFBE56 /* AQOfflineRenderTestAppDelegate.m in Sources */,
+				2BFC8D761047097E00C9A1B3 /* CAXException.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
