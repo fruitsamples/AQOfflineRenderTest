@@ -24,14 +24,13 @@ See Technical Q&A QA1562 - Audio Queue - Offline Rendering
 ===========================================================================
 BUILD REQUIREMENTS:
 
-Mac OS X v10.5.6, Xcode 3.1.2, iPhone OS 2.2.1
+iOS 4.0 SDK
 
 
 ===========================================================================
 RUNTIME REQUIREMENTS:
 
-Simulator: Mac OS X v10.5.6
-iPhone: iPhone OS 2.2
+iPhone OS 3.2 or later
 
 
 ===========================================================================
@@ -56,8 +55,10 @@ All the code demonstrating how to perform offline render is contained in this on
 ===========================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
+Version 1.2, added CFBundleIconFiles in Info.plist.
+Version 1.1, upgraded project to build with the iOS 4.0 SDK.
 Version 1.0, tested with iPhone OS 2.2.1. First public release.
 
 
 ================================================================================
-Copyright (C) 2009 Apple Inc. All rights reserved.
+Copyright (C) 2009-2010 Apple Inc. All rights reserved.

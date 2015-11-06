@@ -306,7 +306,7 @@ void DoAQOfflineRender(CFURLRef sourceURL, CFURLRef destinationURL)
 			captureABL.mBuffers[0].mDataByteSize = captureBuffer->mAudioDataByteSize;
 			UInt32 writeFrames = captureABL.mBuffers[0].mDataByteSize / captureFormat.mBytesPerFrame;
 			
-            printf("t = %.f: AudioQueueOfflineRender:  req %d fr/%d bytes, got %d fr/%d bytes\n", ts.mSampleTime, (int)reqFrames, (int)captureBufferByteSize, writeFrames, (int)captureABL.mBuffers[0].mDataByteSize);
+            printf("t = %.f: AudioQueueOfflineRender:  req %d fr/%d bytes, got %ld fr/%d bytes\n", ts.mSampleTime, (int)reqFrames, (int)captureBufferByteSize, writeFrames, (int)captureABL.mBuffers[0].mDataByteSize);
             
 			XThrowIfError(ExtAudioFileWrite(captureFile, writeFrames, &captureABL), "ExtAudioFileWrite");
 			
